@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>作业3-多媒体插入</title>
+</head>
+<body>
+  <h2>音频示例</h2>
+  <!-- 插入音频，显示控制条，支持循环播放 -->
+  <audio controls loop>
+    <!-- 相对路径引用media文件夹里的音频，指定类型 -->
+    <source src="media/music.mp3" type="audio/mpeg">
+    你的浏览器不支持音频播放，请更换浏览器~
+  </audio>
+  <p>属性说明：controls=显示播放/暂停/音量控制；loop=播放完自动重复</p>
+  <hr/> <!-- 用水平线分隔音频和视频 -->
+  <h2>视频示例</h2>
+  <!-- 插入视频，指定尺寸，显示控制条 -->
+  <video controls width="500" height="300" loop poster="media/cover.jpg">
+    <!-- 相对路径引用media文件夹里的视频，指定类型 -->
+    <source src="media/video.mp4" type="video/mp4">
+    你的浏览器不支持视频播放，请更换浏览器~
+  </video>
+  <p>属性说明：width/height=视频宽高；poster=可选，视频加载前显示的封面图（需在media文件夹放cover.jpg）</p>
+</body>
+</html>
